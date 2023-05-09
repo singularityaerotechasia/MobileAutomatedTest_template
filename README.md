@@ -5,7 +5,7 @@ This is a project created to be an example to test mobile apps:
 ## Pre-Requisite
 
 1. Java 17
-2. Selenium
+2. Appium
 3. Cucumber
 4. Gradle
 
