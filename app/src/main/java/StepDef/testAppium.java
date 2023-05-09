@@ -16,7 +16,7 @@ public class testAppium {
         TimeUnit.SECONDS.sleep(5);
 //        driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView/android.view.View/android.widget.ScrollView/android.widget.EditText[1]")).sendKeys("Bad");
         WebElement usrname = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView/android.view.View/android.widget.ScrollView/android.widget.EditText[1]"));
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(5);
         usrname.click();
         usrname.sendKeys("operator@eaas.com");
     }
