@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+    id'io.qameta.allure' version '2.11.2'
+}
+
+android {
+    namespace 'com.example.appiumandroidstd'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.appiumandroidstd"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+//    implementation 'org.testng:testng:6.9.6'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    testImplementation 'io.appium:java-client:8.3.0'
+    implementation 'com.github.appium:java-client:8.3.0'
+//    implementation 'org.slf4j:jul-to-slf4j:2.0.6'
+    testImplementation 'io.cucumber:cucumber-java:5.7.0'
+    implementation 'io.cucumber:cucumber-java:5.7.0'
+    implementation 'io.cucumber:cucumber-testng:5.7.0'
+    implementation 'io.qameta.allure:allure-cucumber5-jvm:2.14.0'
+}
