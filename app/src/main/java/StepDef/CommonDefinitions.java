@@ -16,6 +16,8 @@ import io.cucumber.java.en.Given;
 public class CommonDefinitions {
 
     public static AndroidDriver driver;
+    public static String  feature = System.getProperty("user.dir") + "\\src\\main\\Features";
+    public static String  stepDef = System.getProperty("user.dir") + "\\src\\main\\java\\StepDef";
 
     @Before
     public void launchEAASE() throws MalformedURLException {
