@@ -1,6 +1,6 @@
 ﻿# Mobile Automated Test Template
 
-This is a project created to be an example to test EAASE mobile app:
+This is a project created to be an example to test mobile apps:
 
 ## Pre-Requisite
 
